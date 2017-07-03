@@ -6,20 +6,36 @@
 //  Copyright © 2017 AGAT. All rights reserved.
 //
 
-import UIKit
+import PKHUD
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var textField: UITextField!
+    var activeTextField: UITextField?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        textField.delegate = self
+        
+        let customView = UIView(frame: CGRect(x: 0, y: 0, width: 300, height: 44))
+        customView.backgroundColor = .red
+        textField?.inputAccessoryView = customView
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func logIn(_ sender: Any) {
+        HUD.flash(.labeledError(title: "blabla", subtitle: "blablalba"),
+                  onView: activeTextField?.inputAccessoryView,
+                  delay: 1.0)
     }
-
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        activeTextField = textField // if keyboard is shown, show HUD.flash under inputAccessoryView
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        activeTextField = nil // if keyboard isn't shown, just show simple HUD.flash
+    }
 
 }
 

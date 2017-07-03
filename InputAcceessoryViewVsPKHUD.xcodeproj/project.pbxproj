@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		206058E5AB665AFF4511DC51 /* Pods_InputAcceessoryViewVsPKHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB5D46E48E6F10CA47ADE30 /* Pods_InputAcceessoryViewVsPKHUD.framework */; };
 		706A9A851F0A1EA9002BDDEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706A9A841F0A1EA9002BDDEF /* AppDelegate.swift */; };
 		706A9A871F0A1EAA002BDDEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706A9A861F0A1EAA002BDDEF /* ViewController.swift */; };
 		706A9A8A1F0A1EAA002BDDEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 706A9A881F0A1EAA002BDDEF /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FB5D46E48E6F10CA47ADE30 /* Pods_InputAcceessoryViewVsPKHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InputAcceessoryViewVsPKHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		706A9A811F0A1EA9002BDDEF /* InputAcceessoryViewVsPKHUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InputAcceessoryViewVsPKHUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		706A9A841F0A1EA9002BDDEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		706A9A861F0A1EAA002BDDEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		706A9A8B1F0A1EAA002BDDEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		706A9A8E1F0A1EAA002BDDEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		706A9A901F0A1EAA002BDDEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		714410135B2C079FE48D03B4 /* Pods-InputAcceessoryViewVsPKHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InputAcceessoryViewVsPKHUD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InputAcceessoryViewVsPKHUD/Pods-InputAcceessoryViewVsPKHUD.debug.xcconfig"; sourceTree = "<group>"; };
+		7A9D888F43212C148D9B733B /* Pods-InputAcceessoryViewVsPKHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InputAcceessoryViewVsPKHUD.release.xcconfig"; path = "Pods/Target Support Files/Pods-InputAcceessoryViewVsPKHUD/Pods-InputAcceessoryViewVsPKHUD.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				206058E5AB665AFF4511DC51 /* Pods_InputAcceessoryViewVsPKHUD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1817A2C48C7914A2546BFF63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				714410135B2C079FE48D03B4 /* Pods-InputAcceessoryViewVsPKHUD.debug.xcconfig */,
+				7A9D888F43212C148D9B733B /* Pods-InputAcceessoryViewVsPKHUD.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		706A9A781F0A1EA9002BDDEF = {
 			isa = PBXGroup;
 			children = (
 				706A9A831F0A1EA9002BDDEF /* InputAcceessoryViewVsPKHUD */,
 				706A9A821F0A1EA9002BDDEF /* Products */,
+				1817A2C48C7914A2546BFF63 /* Pods */,
+				AE04E244B1F6D12A0717F280 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = InputAcceessoryViewVsPKHUD;
 			sourceTree = "<group>";
 		};
+		AE04E244B1F6D12A0717F280 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FB5D46E48E6F10CA47ADE30 /* Pods_InputAcceessoryViewVsPKHUD.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 706A9A931F0A1EAA002BDDEF /* Build configuration list for PBXNativeTarget "InputAcceessoryViewVsPKHUD" */;
 			buildPhases = (
+				061FA34A33C43E95C4A1D8ED /* [CP] Check Pods Manifest.lock */,
 				706A9A7D1F0A1EA9002BDDEF /* Sources */,
 				706A9A7E1F0A1EA9002BDDEF /* Frameworks */,
 				706A9A7F1F0A1EA9002BDDEF /* Resources */,
+				CB2301A5C0200DACC1F964BA /* [CP] Embed Pods Frameworks */,
+				1E620BC2C5E95637EDF76DE7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		061FA34A33C43E95C4A1D8ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1E620BC2C5E95637EDF76DE7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InputAcceessoryViewVsPKHUD/Pods-InputAcceessoryViewVsPKHUD-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB2301A5C0200DACC1F964BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InputAcceessoryViewVsPKHUD/Pods-InputAcceessoryViewVsPKHUD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		706A9A7D1F0A1EA9002BDDEF /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		706A9A941F0A1EAA002BDDEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 714410135B2C079FE48D03B4 /* Pods-InputAcceessoryViewVsPKHUD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G2WELWFF7E;
@@ -272,6 +348,7 @@
 		};
 		706A9A951F0A1EAA002BDDEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A9D888F43212C148D9B733B /* Pods-InputAcceessoryViewVsPKHUD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G2WELWFF7E;
