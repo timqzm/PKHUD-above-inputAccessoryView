@@ -11,30 +11,19 @@ import PKHUD
 class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var textField: UITextField!
-    var activeTextField: UITextField?
+    let customView = UIView(frame: CGRect(x: 0, y: 0, width: 300, height: 44))
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        textField.delegate = self
-        
-        let customView = UIView(frame: CGRect(x: 0, y: 0, width: 300, height: 44))
         customView.backgroundColor = .red
         textField?.inputAccessoryView = customView
     }
     
     @IBAction func logIn(_ sender: Any) {
         HUD.flash(.labeledError(title: "blabla", subtitle: "blablalba"),
-                  onView: activeTextField?.inputAccessoryView,
+                  onView: UIApplication.shared.windows.last,
                   delay: 1.0)
-    }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        activeTextField = textField // if keyboard is shown, show HUD.flash under inputAccessoryView
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        activeTextField = nil // if keyboard isn't shown, just show simple HUD.flash
     }
 
 }
